@@ -1,17 +1,53 @@
 <div id="<%= dom_id car %>">
-  <p>
-    <strong>Make:</strong>
-    <%= car.make %>
-  </p>
 
-  <p>
-    <strong>Model:</strong>
-    <%= car.model %>
-  </p>
 
-  <p>
-    <strong>Year:</strong>
-    <%= car.year %>
-  </p>
+  
 
 </div>
+<table class="table table-bordered table-striped">
+  <thead class="thead-dark"> 
+    <tr>
+      <th scope="col">Make:</th>
+      <th scope="col">Model:</th>
+      <th scope="col">Year:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> <%= car.make %></td>
+      <td><%= car.model %></td>
+      <td><%= car.year %></td>
+    </tr>
+  </tbody>
+</table>
+
+<div id="pricing" class="container-fluid">
+  <table class="table table-bordered table-striped">
+    <thead><tr>
+      <th>Material Name</th>
+      <th>Rate (INR)</th>
+      </tr>
+    </thead>
+    <tbody style="">
+      <tr>
+        <td>Books</td>
+        <td>7.00(per KG)</td>
+
+      </tr>
+      <tr>
+        <td>Soft Plastic</td>
+        <td>15.00(per KG)</td>
+      </tr>
+      <tr>
+        <td>Hard Plastic</td>
+        <td>2.00(per KG)</td>
+      </tr>
+      <tr>
+        <td>Hard Plastic</td>
+        <td>2.00(per KG)</td>
+      </tr>
+      
+    </tbody>
+  </table>
+<div>
+
